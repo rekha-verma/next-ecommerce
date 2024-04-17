@@ -1,0 +1,8 @@
+.input-box {
+    .search-input {
+        padding: 5px 40px 5px 15px;
+        border: 1px solid rgba(0, 0, 0, 0.25) !important;
+        border-radius: 25px;
+        width: 100%;
+    }
+}
