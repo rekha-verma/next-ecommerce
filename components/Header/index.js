@@ -41,17 +41,12 @@ export default function Header() {
                 </div>
             </div>
             <div>
-                <div id="mySidenav" style={showHeader} className="sidenav fixed z-0 top-0 text-white right-0 bg-black overflow-x-hidden transition-1">
-                    <a href="javascript:void(0)" className="closebtn" onClick={() =>
-                        setShowHeader({ transform: "translate3d(100vw, 0, 0)" })
-                    }>&times;</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
+                <div id="mySidenav" style={showHeader} className="flex pt-5 flex-col w-7/12 h-full fixed z-10 top-0 text-white right-0 bg-black overflow-x-hidden duration-500 ease-in-out">
+                    <Link href="#" className="m-5 text-2xl">Login</Link>
+                    <Link href="#" className="m-5 text-2xl">Register</Link>
                 </div>
                 <div
-                    className="background fixed w-screen h-full top-0 text-white left-0 bg-transparent cursor-pointer"
+                    className="background z-0 fixed w-screen h-full top-0 text-white left-0 bg-transparent cursor-pointer"
                     style={showHeader}
                     onClick={() =>
                         setShowHeader({ transform: "translate3d(100vw, 0, 0)" })
